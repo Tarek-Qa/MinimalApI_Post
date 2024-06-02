@@ -16,6 +16,6 @@ namespace Application.Abstractions
 
         Task<Post> UpdatePost(string UpdatedContent, int PostId);
 
-        Task<Post> DeletePost(int PostId);
+        Task DeletePost(int PostId);
     }
 }

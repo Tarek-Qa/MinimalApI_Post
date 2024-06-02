@@ -33,6 +33,7 @@ namespace DataAccess.Repositories
             var post = await _ctx.Posts
                 .FirstOrDefaultAsync(P => P.Id == PostId);
             if (post == null) return;
+
             _ctx.Posts.Remove(post);
             
             await _ctx.SaveChangesAsync();
