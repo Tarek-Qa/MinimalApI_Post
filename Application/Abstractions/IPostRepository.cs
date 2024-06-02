@@ -14,7 +14,7 @@ namespace Application.Abstractions
         Task<Post> GetPostById(int PostId);
         Task<Post> CreatePost(Post ToCreate);
 
-        Task<Post> UpDatePost(string UpdatedContent, int PostId);
+        Task<Post> UpdatePost(string UpdatedContent, int PostId);
 
         Task<Post> DeletePost(int PostId);
     }
