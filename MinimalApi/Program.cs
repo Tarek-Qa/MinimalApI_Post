@@ -9,6 +9,8 @@ builder.Services.AddDbContext<SocialDbContext>(opt => opt.UseSqlServer(cs));
 builder.Services.AddScoped<IPostRepository, PostRepository>();  
 
 
+
+
 var app = builder.Build();
 
 
